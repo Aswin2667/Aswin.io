@@ -1,0 +1,210 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.nav{
+    font-size: medium;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: url(background.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .box{
+    height: 86vh;
+    width: 75%;
+    padding: 0 20px;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 10;
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(25px);
+    box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.15);
+}
+.container::after{
+    content: '';
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background: linear-gradient( #c1d9fb,#cbd1f8);
+    transform: translate(490px,150px);
+}
+.container .box nav{
+    height: 7%;
+    width: 95%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px auto;
+    padding: 20px;
+}
+.container .box nav ul li{
+    display: inline-block;
+    padding: 0 20px;
+    list-style: none;
+}
+.container .box nav ul li a{
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    color: #242329;
+    transition: 0.3s
+}
+.container .box nav ul li a:hover{
+    color: #7c8bd1;
+}
+.container .box nav .logo{
+    font-size: 35px;
+    color: #242329;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+.container .box .contains{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 8%;
+    padding-left: 80px;
+}
+.contains .section-1{
+    position: relative;
+    width: 40%;
+}
+.contains .section-1 h1{
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #242329;
+}
+.contains .section-1 h3{
+    color: #6f34fe;
+    margin-bottom: 10px;
+    width: 800px;
+    font-size: 24px;
+}
+.contains .section-1 p{
+    font-size: 18px;
+    color: #505052;
+    margin-bottom: 50px;
+}
+.detail .btn{
+    margin: 15px;
+     margin-left: 75px; 
+}
+.contains .section-1 .btn,.btn{
+    padding: 15px 20px;
+    background-color: #6f34fe;
+    border: 1px solid #6f34fe;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.contains .section-1 .btn:hover,.btn:hover{
+    color: #6f34fe;
+    transition: 0.3s;
+    background-color: #cdddf3;
+    border: 1px solid ;
+}
+.contains .section-2{
+    width: 25%;
+    margin-right: 50px;
+    border-top-right-radius: 2;
+    align-items: center;
+}
+.contains .section-2 img{
+    width: 100%;
+    border-radius: 20px;
+}
+.contains .section-3{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    left: 10px;
+    top: 30%;
+}
+.contains .section-3 a i{
+    font-size: 25px;
+    cursor: pointer;
+    color: #7c8bd1;
+    transition: 0.3s;
+}
+.contains .section-3 i:hover{
+    color: #6f34fe;
+}
+.detail{
+    color: #6f34fe;
+    margin: 320px;
+    margin-top: 150px;
+   font-family: 'Times New Roman', Times, serif;
+}
+.form{
+    color: #6f34fe;
+    background-color: #cdddf3;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    font-size: medium;
+}
+ h3{
+    color: #6f34fe;
+    margin-top: 10px;
+}
+.skill{ 
+    
+    margin-left: 30px;
+    margin-top: 40px;
+    
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(47, 98, 119) ;
+    
+}
+.skill ul li{
+    margin-left: 30px;
+    padding: 3px;
+    margin-right: 20px;
+    
+}
+.skill ul{
+    margin-top: 10px;
+    margin-right: 20px;
+    width: 375px;
+}
+.aca{
+    margin-top: 50px;
+    width: 400px;
+} 
+.aca ul{
+    width: 600px;
+    margin-right: 40px;
+}
+.aca ul li{
+   margin-left: 10px;
+    color: rgb(47, 98, 119);
+    padding: 6px;
+    
+}
+.q{
+position: absolute;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: #000000fe;
+margin-top: 3px;
+margin-bottom: 610px;
+margin-left: 160px;
+margin-right: 160px;
+}
